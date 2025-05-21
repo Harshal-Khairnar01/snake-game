@@ -17,15 +17,28 @@ body{
 }
 
 #controls{
-    display: grid;
-   grid-template-columns: repeat(4,1fr);
-   gap:5px;
+    width: 200px;
+    background-color: #161a41;
    padding: 10px;
+   display: flex;
+   flex-direction: column;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: auto;
 }
-#controls button{
+
+#controls div{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     padding: 2px;
-    height: 40px;
-    width: 40px;
+}
+
+#controls button{
+    margin: auto;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
     border-radius: 12px;
     cursor: pointer;
 }
