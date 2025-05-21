@@ -136,3 +136,33 @@ window.addEventListener('keydown', e => {
     }
 
 })
+
+// Mobile button controls
+document.getElementById('up').addEventListener('click', () => {
+    if (inputdir.y !== 1) {
+        inputdir.x = 0;
+        inputdir.y = -1;
+        movesound.play();
+    }
+});
+document.getElementById('down').addEventListener('click', () => {
+    if (inputdir.y !== -1) {
+        inputdir.x = 0;
+        inputdir.y = 1;
+        movesound.play();
+    }
+});
+document.getElementById('left').addEventListener('click', () => {
+    if (inputdir.x !== 1) {
+        inputdir.x = -1;
+        inputdir.y = 0;
+        movesound.play();
+    }
+});
+document.getElementById('right').addEventListener('click', () => {
+    if (inputdir.x !== -1) {
+        inputdir.x = 1;
+        inputdir.y = 0;
+        movesound.play();
+    }
+});
